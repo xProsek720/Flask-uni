@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <title>Kalkulator</title>
+    </head>
+    <body>
+        <div id="kalkulator" class="center">
+            <p>kalkulator:</p>
+            <div id="wyswietlacz" class="center">
+                <input class="wyswietlacz" type="text" value={{calc}} disabled>
+            </div>
+            <div id="klawiatura" class="center">
+                <div class="top">
+                    <div class="przycisk">
+                        <form action="/(" method="post">
+                            <button type="submit" class="przycisk" onclick="">(</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/)" method="post">
+                            <button type="submit" class="przycisk" onclick="">)</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/-" method="post">
+                            <button type="submit" class="przycisk" onclick="">-</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/c" method="post">
+                            <button type="submit" class="przycisk" onclick="">C</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="przycisk">
+                        <form action="/1" method="post">
+                            <button type="submit" class="przycisk" onclick="">1</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/2" method="post">
+                            <button type="submit" class="przycisk" onclick="">2</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/3" method="post">
+                            <button type="submit" class="przycisk" onclick="">3</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/d" method="post">
+                            <button type="submit" class="przycisk" onclick="">/</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="przycisk">
+                        <form action="/4" method="post">
+                            <button type="submit" class="przycisk" onclick="">4</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/5" method="post">
+                            <button type="submit" class="przycisk" onclick="">5</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/6" method="post">
+                            <button type="submit" class="przycisk" onclick="">6</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/*" method="post">
+                            <button type="submit" class="przycisk" onclick="">*</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="przycisk">
+                        <form action="/7" method="post">
+                            <button type="submit" class="przycisk" onclick="">7</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/8" method="post">
+                            <button type="submit" class="przycisk" onclick="">8</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/9" method="post">
+                            <button type="submit" class="przycisk" onclick="">9</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/-" method="post">
+                            <button type="submit" class="przycisk" onclick="">-</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="przycisk">
+                        <form action="/0" method="post">
+                            <button type="submit" class="przycisk" onclick="">0</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/dot" method="post">
+                            <button type="submit" class="przycisk" onclick="">.</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/e" method="post">
+                            <button type="submit" class="przycisk" onclick="">=</button>
+                        </form>
+                    </div>
+                    <div class="przycisk">
+                        <form action="/+" method="post">
+                            <button type="submit" class="przycisk" onclick="">+</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
